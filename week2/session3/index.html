@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- write an example for empty tag and Nested tag -->
+    <img src="image.jpg" alt="Example Image" />
+    <p>This is a <strong>nested</strong> tag example.</p>
+
+    <!-------------------------------------------->
+
+    <!-- make a tag for adding image with all attributes in your web page -->
+    <img src="example-image.jpg" alt="Description of the image" width="600" height="400"
+        title="Hover text for the image" loading="lazy" />
+
+    <!-------------------------------------------->
+
+    <!-- why should we add alt attribute in image tag -->
+    <p>
+        1. Accessibility:
+
+        The alt text provides a textual description of the image, which is crucial for users with visual impairments who
+        rely on screen readers. Screen readers read the alt text aloud, helping users understand the content of the
+        image.
+        Without alt text, screen readers would simply skip the image, or read it as "image," which doesn't provide
+        useful information.
+
+        2. SEO (Search Engine Optimization):
+
+        Search engines can't "see" images; they rely on the alt attribute to understand the content of the image. Adding
+        descriptive alt text can help search engines index the image properly and improve the visibility of your website
+        in search results.
+        It can also help your image appear in image search results, driving more traffic to your site.
+
+        3. Image Loading Issues:
+
+        If an image fails to load (due to broken links, slow connections, or other technical issues), the browser will
+        display the alt text in place of the image. This ensures that users still understand what the missing image was
+        supposed to convey.
+
+        4. Improves User Experience:
+
+        For users browsing with images turned off or on devices that can't load images, the alt text offers a fallback
+        to describe what the image is about.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- make a link (anchor) tag with right attributes -->
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+
+    <!-------------------------------------------->
+
+    <!-- 2 tags for make text bold -->
+    <strong>tag1</strong>
+    <b>tag2</b>
+
+    <!-------------------------------------------->
+
+    <!-- 2 tags for make text italic -->
+    <i>tag1</i>
+    <em>tag2</em>
+
+    <!-------------------------------------------->
+
+    <!-- tag for make text deleted -->
+    <del>deleted tag</del>
+
+    <!-------------------------------------------->
+
+    <!-- tag for make text super like H2O -->
+    H<sub>2</sub>O
+
+    <!-------------------------------------------->
+
+    <!-- write these inputs with right way -->
+
+    <!-------------------------------------------->
+
+    <!-- input recieves Name value from user with right attributes -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50" required />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- input recieves age value from user with right attributes -->
+    <form>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- input recieves email value from user with right attributes -->
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- input recieves password value from user with right attributes -->
+    <form method="post">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required minlength="8"
+            maxlength="20" />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- input recieves color value from user with right attributes -->
+    <form>
+        <label for="color">Coler:</label>
+        <input type="color" name="color" id="color" value="#000000" required />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- input allows user to upload file with right attributes -->
+    <form>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" required accept=".jpg,.jpeg,.png,.pdf" multiple />
+    </form>
+
+    <!-------------------------------------------->
+
+    <!-- write and complete the correct attributes for the following inputs
+        
+        <input type="text" list="hamada">
+        <input type="age" href="link">
+        <input type="email" label="frontend">
+        <input type="file" label="frontend" accept="3moo samy" />
+        ----
+        <input type="raio" name="salah">
+        <input type="rdio" name="qafsha">
+        <input type="rado" name="sheno">
+        ---- 
+        <input type="checbox" name="salah">
+        <input type="radio" name="qafsha">
+        <input type="radio" name="sheno">
+    -->
+    <!-- Text input with a datalist for autocomplete -->
+    <input type="text" list="hamada" id="textInput" name="textInput">
+    <datalist id="hamada">
+        <option value="Option 1">
+        <option value="Option 2">
+        <option value="Option 3">
+    </datalist>
+
+    <!-- Corrected age input field -->
+    <input type="number" id="ageInput" name="ageInput" min="0" max="120" placeholder="Enter your age">
+
+    <!-- Email input field with correct label attribute usage (in a <label> tag) -->
+    <label for="emailInput">Frontend:</label>
+    <input type="email" id="emailInput" name="emailInput" placeholder="Enter your email" required>
+
+    <!-- File input field with corrected accept attribute (valid MIME types) -->
+    <label for="fileUpload">Upload a file:</label>
+    <input type="file" id="fileUpload" name="fileUpload" accept=".jpg,.jpeg,.png,.pdf">
+
+    <!-- Corrected radio button input fields -->
+    <input type="radio" id="radio1" name="group" value="salah">
+    <label for="radio1">Salah</label>
+    <input type="radio" id="radio2" name="group" value="qafsha">
+    <label for="radio2">Qafsha</label>
+    <input type="radio" id="radio3" name="group" value="sheno">
+    <label for="radio3">Sheno</label>
+
+    <!-- Corrected checkbox input field -->
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox">Checkbox</label>
+
+
+    <!-- i have a case , i need to make user choose only one value from all inputs -->
+    <input type="radio" id="radio1" name="group" value="salah">
+    <label for="radio1">Salah</label>
+    <input type="radio" id="radio2" name="group" value="qafsha">
+    <label for="radio2">Qafsha</label>
+    <input type="radio" id="radio3" name="group" value="sheno">
+    <label for="radio3">Sheno</label>
+
+    <!-------------------------------------------->
+
+    <!-- i have a case , i need to make user choose one or more value from all inputs -->
+    <fieldset>
+        <legend>Choose one or more options:</legend>
+        <input type="checkbox" id="check1" name="selection" value="Choice 1">
+        <label for="check1">Choice 1</label><br>
+        <input type="checkbox" id="check2" name="selection" value="Choice 2">
+        <label for="check2">Choice 2</label><br>
+        <input type="checkbox" id="check3" name="selection" value="Choice 3">
+        <label for="check3">Choice 3</label>
+    </fieldset>
+
+    <!-------------------------------------------->
+
+    <!-- what is a tag for make select for more than 10 options? and write this tag -->
+    <fieldset>
+        <legend>Choose one or more options:</legend>
+        <input type="checkbox" id="check1" name="selection" value="Choice 1">
+        <label for="check1">Choice 1</label><br>
+        <input type="checkbox" id="check2" name="selection" value="Choice 2">
+        <label for="check2">Choice 2</label><br>
+        <input type="checkbox" id="check3" name="selection" value="Choice 3">
+        <label for="check3">Choice 3</label>
+    </fieldset>
+
+    <!-------------------------------------------->
+
+    <!-- How to add video and audio in your web page ? -->
+    <video width="640" height="360" controls>
+        <source src="example-video.mp4" type="video/mp4">
+        <source src="example-video.ogv" type="video/ogg">
+        <source src="example-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="example-audio.mp3" type="audio/mp3">
+        <source src="example-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <!-------------------------------------------->
+
+    <!-- How to add video and audio in your web page ? -->
+
+    <!-------------------------------------------->
+
+    <!-- 2 benefits for using div tag -->
+    <p>
+        1. Grouping and Structuring Content.
+        2. Applying CSS Styling and JavaScript.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- benefits of using semantic HTML -->
+    <p>
+        1. Improved Accessibility.
+
+        2. Enhanced SEO (Search Engine Optimization).
+
+        3. Better Code Readability and Maintainability.
+
+        4. Consistent and Predictable Layouts.
+
+        5. Easier Collaboration and Development.
+
+        6. Improved Performance.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- what is main tag -->
+    <p>
+        The main tag is a semantic HTML element introduced in HTML5 that represents the dominant content of the body
+        tage of a document.
+        It is used to encapsulate the primary content of a web page, distinguishing it from other content such as
+        headers, footers, navigation, and sidebars.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- why should add title tag -->
+    <p>
+        1. Improves Search Engine Optimization (SEO).
+
+        2. Enhances User Experience.
+
+        3. Aids in Bookmarking and Sharing.
+
+        4. Provides Context and Relevance.
+
+        5. Improves Accessibility.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- Write a meta tag for make description about web page -->
+    <meta name="description"
+        content="This page offers a comprehensive guide to the best hiking trails in national parks. Discover tips, maps, and detailed information for your next adventure.">
+
+    <!-------------------------------------------->
+
+    <!-- Write a meta tag for make keywords for web page -->
+    <meta name="keywords" content="hiking trails, national parks, outdoor adventures, hiking tips, trail maps">
+
+    <!-------------------------------------------->
+
+    <!-- What is meta charset -->
+    <p>
+        The meta charset tag specifies the character encoding for the HTML document.
+        Character encoding determines how characters are represented in bytes and how text is displayed in the browser.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- Write 3 ways to write css code  -->
+    <p>
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- what is the selector in css -->
+    <p>
+        In CSS, a selector is a pattern used to target and apply styles to HTML elements.
+        It defines which elements on the page should be affected by the styles defined in a CSS rule.
+        Selectors can be simple or complex, depending on how specific you need to be in targeting elements.
+    </p>
+
+    <!-------------------------------------------->
+
+    <!-- Write the property and value for make color in css -->
+    <!-- 
+        p {
+            color: blue; /* Named color */
+            } 
+    -->
+
+    <!-------------------------------------------->
+
+    <!-- صلي علي النبي الكريم -->
+     <p>علية افضل السصلاة واتم التسليم</p>
+    
+</body>
+
+</html>
